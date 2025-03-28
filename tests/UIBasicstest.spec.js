@@ -15,7 +15,8 @@ test(' @xyz page playwright test', async ({page}) =>
    {
       //chrome
       await page.goto('https://playwright.dev/');
-      //get title---> assertion
+      //get title---> assert
+      console.log("Page Title");
       console.log(await page.title());
       await expect(page).toHaveTitle("Fast and reliable end-to-end testing for modern web apps | Playwright");
    
